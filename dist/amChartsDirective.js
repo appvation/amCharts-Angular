@@ -55,7 +55,7 @@ angular.module('amChartsDirective', []).directive('amChart', ['$q', function ($q
                 chart.dataProvider = data;
                 // if a category field is not specified, attempt to use the first field from an object in the array
                 chart.categoryField = o.categoryField || Object.keys(o.data[0])[0];
-                chart.startDuration = 0.5; // default animation length, because everyone loves a little pizazz
+                chart.startDuration = 0; // no ugly animations thanks
 
                 // AutoMargin is on by default, but the default 20px all around seems to create unnecessary white space around the control
                 chart.autoMargins = true;
